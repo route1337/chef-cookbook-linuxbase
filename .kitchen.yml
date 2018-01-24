@@ -1,0 +1,30 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+  # You may wish to disable always updating cookbooks in CI or other testing environments.
+  # For example:
+  #   always_update_cookbooks: <%= !ENV['CI'] %>
+  always_update_cookbooks: true
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: ubuntu-14.04
+  - name: ubuntu-16.04
+  - name: centos72
+    driver:
+      box: bento/centos-7.2
+      box_url: bento/centos-7.2
+
+suites:
+  - name: default
+    run_list:
+      - recipe[r1337-linux-base::default]
+    verifier:
+      inspec_tests:
+        - test/smoke/default
+    attributes:
