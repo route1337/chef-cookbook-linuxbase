@@ -5,7 +5,7 @@ This Chef cookbook will configure some basic system settings, add/remove some co
 Changes Performed
 ------------
 1. Make sure CentOS has EPEL
-2. Remove the following packags from Ubuntu-based systems
+2. Remove the following packages from Ubuntu-based systems
     1. landscape-client-ui
     2. landscape-client-ui-install
     3. landscape-client
