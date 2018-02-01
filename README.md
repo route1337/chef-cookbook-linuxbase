@@ -74,7 +74,7 @@ Bug Fixes & Changes
 ------------
 
 1. v0.1.1
-  1. # TODO
+  1. TODO
 2. v0.1.0
   1. Initial release
 
