@@ -86,10 +86,13 @@ Use Cases
 ------------
 Getting a minimum base configuration going on new Linux servers 
 
-Donation To Support This Cookbook
+Donate To Support This Chef Cookbook
 ------------
-Getting a minimum base configuration going on new Linux servers 
+Route 1337, LLC operates entirely on donations. If you find this cookbook useful, please consider donating via one of these methods.
 
-Based On
-------------
-This cookbook is based on an older cookbook by [Matthew Ahrenstein](https://www.ahrenstein.com) called [linux-tweak](https://github.com/ahrenstein/chefcookbook-public-linuxtweak)
+1. Bitcoin: 1CnzzrPh3iirEkLRLiWFKXDV9i5TXHQjE2
+2. Bitcoin Cash: qzcq645swgd87s7t5mmmjcumf4armhtjt5euww5c29
+3. Litecoin: LWYbc9hf5ErJsF874Q3wwmMiASHRWgwrjR
+4. Ethereum: 0x117543aa7a4D704849171cA06568Ece71B111D18
+
+Thank you for your support!
