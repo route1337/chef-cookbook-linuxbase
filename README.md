@@ -73,15 +73,6 @@ Known Issues
 ------------
 1. None so far :)
 
-Bug Fixes & Changes
-------------
-
-1. v0.1.1
-    1. Added psmisc package to all supported operating systems
-    2. Added bind-utils to CentOS
-2. v0.1.0
-    1. Initial release
-
 Use Cases
 ------------
 Getting a minimum base configuration going on new Linux servers 
