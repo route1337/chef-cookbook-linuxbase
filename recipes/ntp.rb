@@ -7,7 +7,7 @@
 # Maintainers:
 # - Matthew Ahrenstein: matthew@route1337.com
 #
-# See LICENSE.txt
+# See LICENSE
 #
 
 # Set the correct time zone for localtime
