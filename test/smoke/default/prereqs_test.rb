@@ -31,7 +31,7 @@ if os[:name] == 'ubuntu'
   end
 
   # Verify the packages we want are installed
-  %w{bmon htop vim curl gnupg2 atop git molly-guard python-pip python-dev python3-pip unzip}.each do |pkg|
+  %w{bmon htop vim curl gnupg2 atop git molly-guard python-pip python-dev python3-pip unzip psmisc}.each do |pkg|
     describe package(pkg) do
       it { should be_installed }
     end
@@ -56,7 +56,7 @@ elsif os[:name] == 'centos'
   end
 
   # Verify the packages we want are installed
-  %w{vim-enhanced curl htop gnupg2 git lsof telnet net-tools bmon atop wget python2-pip python34-pip python34-devel unzip gcc}.each do |pkg|
+  %w{vim-enhanced curl htop gnupg2 git lsof telnet net-tools bmon atop wget python2-pip python34-pip python34-devel unzip gcc psmisc bind-utils}.each do |pkg|
     describe package(pkg) do
       it { should be_installed }
     end

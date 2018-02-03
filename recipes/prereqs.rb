@@ -44,13 +44,13 @@ end
 # Install any needed packages we consider default
 case node['platform']
   when 'ubuntu'
-    %w{bmon htop vim curl gnupg2 atop git molly-guard python-pip python-dev python3-pip unzip}.each do |pkg|
+    %w{bmon htop vim curl gnupg2 atop git molly-guard python-pip python-dev python3-pip unzip psmisc}.each do |pkg|
       package pkg do
         action :install
       end
     end
   when 'centos'
-    %w{vim-enhanced curl htop gnupg2 git lsof telnet net-tools bmon atop wget python2-pip python34-pip python34-devel unzip gcc}.each do |pkg|
+    %w{vim-enhanced curl htop gnupg2 git lsof telnet net-tools bmon atop wget python2-pip python34-pip python34-devel unzip gcc psmisc bind-utils}.each do |pkg|
       package pkg do
         action :install
       end
