@@ -1,6 +1,6 @@
 Linux Base - Changelog
 ==============
-A list of all the changes made to this Cookbook
+A list of all the changes made to this cookbook
 
 Version 0.1.2
 ------------
