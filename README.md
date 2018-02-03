@@ -63,7 +63,7 @@ Requirements
 Installation Tips
 ------------
 
-1. I personally use Berks to install this into my Chef server, because it's easier.
+1. We personally use Berks to install this into Chef servers, because it will grab the dependencies for you as well.
 
 Limitations
 ------------
