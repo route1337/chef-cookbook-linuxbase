@@ -7,7 +7,7 @@
 # Maintainers:
 # - Matthew Ahrenstein: matthew@route1337.com
 #
-# See LICENSE.txt
+# See LICENSE
 #
 
 # Default is just going to call the other recipes in this cookbook where the actual meat of the code is
