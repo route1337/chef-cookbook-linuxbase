@@ -24,6 +24,7 @@ Changes Performed
     10. python-dev
     11. python3-pip
     12. unzip
+    13. psmisc
 4. Install the following packages on CentOS-based systems
     1. vim-enhanced
     2. curl
@@ -41,6 +42,8 @@ Changes Performed
     14. python34-devel
     15. unzip
     16. gcc
+    17. psmisc
+    18. bind-utils
 5. Make sure the `/tools` directory exists and is accessible only to root
 6. install the following python2.7 packages
     1. urllib3
@@ -74,11 +77,16 @@ Bug Fixes & Changes
 ------------
 
 1. v0.1.1
-    1. TODO
+    1. Added psmisc package to all supported operating systems
+    2. Added bind-utils to CentOS
 2. v0.1.0
     1. Initial release
 
 Use Cases
+------------
+Getting a minimum base configuration going on new Linux servers 
+
+Donation To Support This Cookbook
 ------------
 Getting a minimum base configuration going on new Linux servers 
 
