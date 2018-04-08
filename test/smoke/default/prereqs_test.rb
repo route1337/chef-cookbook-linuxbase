@@ -46,6 +46,12 @@ if os[:name] == 'ubuntu'
 
 elsif os[:name] == 'centos'
 
+  # Make sure the broken Fedore Rawhide repo was removed
+  describe file('/etc/yum.repos.d/fedora-rawhide.repo') do
+    it { should_not exist }
+  end
+
+  # Make sure the EPEL repo is here
   describe file('/etc/yum.repos.d/epel.repo') do
     it { should exist }
     it { should be_owned_by 'root' }

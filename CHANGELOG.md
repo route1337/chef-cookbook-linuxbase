@@ -2,6 +2,12 @@ Linux Base - Changelog
 ==============
 A list of all the changes made to this cookbook
 
+Version 0.1.3
+------------
+
+1. We now remove a broken Fedora Rawhide from CentOS machines
+2. Kitchen is now locked to testing on the version of Chef we use in production
+
 Version 0.1.2
 ------------
 

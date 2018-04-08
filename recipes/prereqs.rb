@@ -21,6 +21,13 @@ end
 # Make sure yum EPEL repo is added on CentOS-based systems
 case node['platform']
   when 'centos'
+
+    # Make sure the broken Fedora Rawhide repo is removed
+    file '/etc/yum.repos.d/fedora-rawhide.repo' do
+      action :delete
+    end
+
+    # Make sure the EPEL repo is added
     include_recipe 'yum-epel'
   else
     # Do nothing
