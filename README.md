@@ -4,14 +4,15 @@ This Chef cookbook will configure some basic system settings, add/remove some co
 
 Changes Performed
 ------------
-1. Make sure CentOS has EPEL
-2. Remove the following packages from Ubuntu-based systems
+1. Remove the broken Fedora Rawhide repo from CentOS 
+2. Make sure CentOS has EPEL
+3. Remove the following packages from Ubuntu-based systems
     1. landscape-client-ui
     2. landscape-client-ui-install
     3. landscape-client
     4. landscape-common
     5. update-motd
-3. Install the following packages on Ubuntu-based systems
+4. Install the following packages on Ubuntu-based systems
     1. bmon
     2. htop
     3. vim
@@ -25,7 +26,7 @@ Changes Performed
     11. python3-pip
     12. unzip
     13. psmisc
-4. Install the following packages on CentOS-based systems
+5. Install the following packages on CentOS-based systems
     1. vim-enhanced
     2. curl
     3. htop
@@ -44,18 +45,18 @@ Changes Performed
     16. gcc
     17. psmisc
     18. bind-utils
-5. Make sure the `/tools` directory exists and is accessible only to root
-6. install the following python2.7 packages
+6. Make sure the `/tools` directory exists and is accessible only to root
+7. install the following python2.7 packages
     1. urllib3
     2. pyasn1
-7. Remove root's .bashrc on Ubuntu-based systems
-8. Deploy a custom system-wide bashrc and a supporting git.bash file for working in git repos
-9. Install thefuck in python3 and configure it with [Matthew Ahrenstein](https://www.ahrenstein.com)'s [custom rules](https://github.com/ahrenstein/thefuck-rules)
-10. Install and configure ntp to run off the NTP pool using the America/New_York timezone
+8. Remove root's .bashrc on Ubuntu-based systems
+9. Deploy a custom system-wide bashrc and a supporting git.bash file for working in git repos
+10. Install thefuck in python3 and configure it with [Matthew Ahrenstein](https://www.ahrenstein.com)'s [custom rules](https://github.com/ahrenstein/thefuck-rules)
+11. Install and configure ntp to run off the NTP pool using the America/New_York timezone
 
 Requirements
 ------------
-1. Chef (Tested on Chef 13)
+1. Chef (Tested on Chef 13.6.4)
 2. Linux chef-clients (Tested on Ubuntu 14.04, Ubuntu 16.04 and CentOS 7.2 but kitchen will let you test anything you want)
 3. The apt cookbook from Chef Supermarket
 4. The yum-epel cookbook from Chef Supermarket
