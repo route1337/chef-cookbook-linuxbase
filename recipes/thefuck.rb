@@ -19,10 +19,29 @@ case node['platform']
       not_if { File.exist?('/usr/lib/python3/dist-packages/pip') }
       action :run
     end
+
+    # The below case block deals with Ubuntu 14.04 not having up to date python3 repos due to Canonical not keeping things updated
+    case node['platform_version']
+      when '14.04'
+        # Specify thefuck to be installed locked to version 3.00 due to Canonical's poor repo management
+        execute 'install thefuck' do
+          command 'pip3 install thefuck==3.00' # Let's just manually specify our python binary to be sure it's 3
+          not_if { File.exist?('/usr/local/bin/thefuck') }
+          action :run
+        end
+      else
+        # Specify the install manually since Chef does not have the best python management
+        execute 'install thefuck' do
+          command '/usr/bin/python3 -m pip install --ignore-installed --upgrade thefuck' # Let's just manually specify our python binary to be sure it's 3
+          not_if { File.exist?('/usr/local/bin/thefuck') }
+          action :run
+        end
+    end
+
     # Specify the install manually since Chef does not have the best python management
     execute 'install thefuck' do
-      command '/usr/bin/python3 -m pip install --ignore-installed --upgrade thefuck' # Let's just manually specify our python binary to be sure it's 3
-      not_if { File.exist?('/usr/lib/python3/dist-packages/thefuck') }
+      command 'pip3 install thefuck==3.00' # Let's just manually specify our python binary to be sure it's 3
+      not_if { File.exist?('/usr/local/bin/thefuck') }
       action :run
     end
   when 'centos'
@@ -34,8 +53,8 @@ case node['platform']
     end
     # Specify the install manually since Chef does not have the best python management
     execute 'install thefuck' do
-      command '/usr/bin/python3.4 -m pip install --ignore-installed --upgrade thefuck' # Let's just manually specify our python binary to be sure it's 3
-      not_if { File.exist?('/usr/lib/python3.4/site-packages/thefuck') }
+      command 'pip3 install --ignore-installed --upgrade thefuck' # Let's just manually specify our python binary to be sure it's 3
+      not_if { File.exist?('/usr/bin/thefuck') }
       action :run
     end
   else
