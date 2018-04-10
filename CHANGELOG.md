@@ -2,6 +2,11 @@ Linux Base - Changelog
 ==============
 A list of all the changes made to this cookbook
 
+Version 0.1.4
+------------
+
+1. Fixed python repo issues with thefuck for Ubuntu 14.04
+
 Version 0.1.3
 ------------
 
