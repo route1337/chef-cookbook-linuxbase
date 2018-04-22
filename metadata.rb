@@ -4,8 +4,8 @@ maintainer_email 'matthew@route1337.com'
 license 'MIT'
 description 'Confgure basic settings, packages and services on Linux servers'
 long_description 'This Chef cookbook will configure some basic system settings, add/remove some common packages, and deploy standard configurations for some common services'
-version '0.1.4'
-chef_version '= 13.6.4' if respond_to?(:chef_version)
+version '0.1.5'
+chef_version '>= 13.6.4' if respond_to?(:chef_version)
 issues_url 'https://github.com/route1337/chef-cookbook-linuxbase/issues'
 source_url 'https://github.com/route1337/chef-cookbook-linuxbase'
 depends          'apt'
