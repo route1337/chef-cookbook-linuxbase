@@ -2,6 +2,11 @@ Linux Base - Changelog
 ==============
 A list of all the changes made to this cookbook
 
+Version 0.1.7
+------------
+
+1. Removing stalecryptocurrency wallets from donation section of README
+
 Version 0.1.6
 ------------
 
